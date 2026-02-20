@@ -47,3 +47,9 @@ st.radio("Select your gender", ["Male", "Female", "Other"])
 st.multiselect("Select your hobbies", ["Reading", "Traveling", "Cooking", "Sports"])
 st.date_input("Select your birth date")
 st.time_input("Select a time")   
+
+
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.plot(df['A'], df['B'])  # Correctly using column names
+st.pyplot(fig)
